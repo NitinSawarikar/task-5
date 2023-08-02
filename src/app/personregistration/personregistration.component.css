@@ -1,0 +1,38 @@
+
+.radio{
+    
+    display: flex;
+    flex-direction: row;
+    font-size:larger;
+}
+  
+
+.btn-group .option{
+    text-align: left;
+    width: 200px;
+    display: block;
+}
+.row{
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.d-flex{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #000;
+
+}
+.form-control{
+    border: 1px solid black;
+}
+.breg{
+    display: flex;
+    justify-content: center;
+}
+
+.ptag{
+    display: inline-block;
+}
+

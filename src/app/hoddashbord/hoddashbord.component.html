@@ -1,0 +1,26 @@
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <h2 class="text-center mb-4">HOD Dashboard</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let leave of leaveDatalist">
+      <div class="card mb-3">
+        <div class="card-body">
+            <h3 class="card-title mb-0">Leave For {{leave.fromdate}}</h3>
+          <h3 class="card-text mb-3">Number of days : {{ leave.noofdays }}</h3>
+          <h2 class="mb-0">Reason : </h2>
+          <p>{{ leave.reason }}</p>
+          <div *ngIf="leave.status === 'pending'">
+            <button class="btn btn-success" (click)="approveLeave(leave)">Approve</button>
+            <button class="btn btn-danger" (click)="rejectLeave(leave)">Reject</button>
+          </div>
+            <span class="text-success" *ngIf="leave.status =='approve'"> <i class="fa fa-check" aria-hidden="true"></i> Approved</span>
+            <span class="text-danger" *ngIf="leave.status =='reject'"> <i class="fa fa-times" aria-hidden="true"></i> Rejected</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

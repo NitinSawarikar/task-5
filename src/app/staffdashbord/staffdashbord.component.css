@@ -1,0 +1,17 @@
+.row{
+    flex-direction: row;
+}
+.data{
+    font-size: 50px;
+}
+
+.btn{
+    margin-left: 30px;
+    width: 150px;
+    height: 50px;
+}
+.modal-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
